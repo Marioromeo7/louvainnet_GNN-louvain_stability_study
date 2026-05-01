@@ -1,0 +1,22 @@
+# Generated data — too large for git
+*.pkl
+data/
+network_interactive.html
+
+# Debug/scratch scripts
+check_v3.py
+check_verdict.py
+run_verdict_v3.py
+
+# Duplicate notebook versions
+louvainnet_gnn.ipynb
+louvainnet_gnn (2).ipynb
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
