@@ -55,7 +55,7 @@ page = st.sidebar.radio(
 def run_community(G, algo, seed=42):
     nodes = sorted(G.nodes())
     if algo == "Newman (Greedy Modularity)":
-        comms = list(nx.community.greedy_modularity_communities(G, seed=seed))
+        comms = list(nx.community.greedy_modularity_communities(G))
         part  = {n: i for i, c in enumerate(comms) for n in c}
         mod   = nx.community.modularity(G, comms)
     elif algo == "Louvain":
